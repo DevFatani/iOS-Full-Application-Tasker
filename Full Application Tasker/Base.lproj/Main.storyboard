@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pxl-PZ-gkZ">
-                                <rect key="frame" x="20" y="226" width="335" height="215"/>
+                                <rect key="frame" x="20" y="248.5" width="335" height="170"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra5-h6-NR2">
                                         <rect key="frame" x="115" y="0.0" width="105" height="35"/>
@@ -46,16 +46,8 @@
                                             <segue destination="v2B-2d-phl" kind="show" id="jle-e1-no2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzK-xa-H5U">
-                                        <rect key="frame" x="103.5" y="135" width="128" height="35"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                        <state key="normal" title="Current Location"/>
-                                        <connections>
-                                            <segue destination="dAZ-h7-Z40" kind="show" id="e9G-gp-5wJ"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOt-jK-B4U">
-                                        <rect key="frame" x="116.5" y="180" width="102" height="35"/>
+                                        <rect key="frame" x="116.5" y="135" width="102" height="35"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <state key="normal" title="Import Viedo"/>
                                         <connections>

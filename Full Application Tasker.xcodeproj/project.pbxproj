@@ -16,7 +16,6 @@
 		1311F1EF20E137CE0027CF31 /* ImportImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311F1EE20E137CE0027CF31 /* ImportImage.swift */; };
 		1311F1F120E1380A0027CF31 /* RecordingAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311F1F020E1380A0027CF31 /* RecordingAudio.swift */; };
 		1311F1F320E1382C0027CF31 /* MapWithLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311F1F220E1382C0027CF31 /* MapWithLocation.swift */; };
-		1311F1F520E138480027CF31 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311F1F420E138480027CF31 /* CurrentLocation.swift */; };
 		1311F1F720E138760027CF31 /* ImportViedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311F1F620E138760027CF31 /* ImportViedo.swift */; };
 		131B5B6620E335DB005497EC /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131B5B6520E335DB005497EC /* GoogleMapsBase.framework */; };
 		131B5B6820E335FD005497EC /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131B5B6720E335FD005497EC /* GoogleMaps.framework */; };
@@ -54,7 +53,6 @@
 		1311F1EE20E137CE0027CF31 /* ImportImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportImage.swift; sourceTree = "<group>"; };
 		1311F1F020E1380A0027CF31 /* RecordingAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingAudio.swift; sourceTree = "<group>"; };
 		1311F1F220E1382C0027CF31 /* MapWithLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWithLocation.swift; sourceTree = "<group>"; };
-		1311F1F420E138480027CF31 /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
 		1311F1F620E138760027CF31 /* ImportViedo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViedo.swift; sourceTree = "<group>"; };
 		131B5B6520E335DB005497EC /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
 		131B5B6720E335FD005497EC /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 				1311F1EE20E137CE0027CF31 /* ImportImage.swift */,
 				1311F1F020E1380A0027CF31 /* RecordingAudio.swift */,
 				1311F1F220E1382C0027CF31 /* MapWithLocation.swift */,
-				1311F1F420E138480027CF31 /* CurrentLocation.swift */,
 				1311F1F620E138760027CF31 /* ImportViedo.swift */,
 				132B826720E1EB8B00B382D6 /* Logger.swift */,
 			);
@@ -263,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1311F1F520E138480027CF31 /* CurrentLocation.swift in Sources */,
 				1311F1DE20E0D29F0027CF31 /* ViewController.swift in Sources */,
 				1311F1DC20E0D29F0027CF31 /* AppDelegate.swift in Sources */,
 				132B826D20E1F81600B382D6 /* FileUnit.swift in Sources */,
