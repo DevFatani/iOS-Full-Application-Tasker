@@ -1,0 +1,23 @@
+ [
+  {
+  "featureType": "landscape",
+  "elementType": "geometry.fill",
+  "stylers": [
+              {
+              "color": "#1a2d4c"
+              },
+              {
+              "lightness": 50
+              }
+              ]
+  },
+  {
+  "featureType": "poi",
+  "elementType": "geometry.fill",
+  "stylers": [
+              {
+              "color": "#1a2d4c"
+              }
+              ]
+  }
+]

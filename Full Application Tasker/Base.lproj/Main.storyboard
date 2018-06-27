@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mGc-00-NYs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Full_Application_Tasker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pxl-PZ-gkZ">
+                                <rect key="frame" x="20" y="226" width="335" height="215"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra5-h6-NR2">
+                                        <rect key="frame" x="115" y="0.0" width="105" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Import Image"/>
+                                        <connections>
+                                            <segue destination="mLh-Bw-sN7" kind="show" id="3aL-qP-LJK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjV-jy-hVl">
+                                        <rect key="frame" x="102.5" y="45" width="130" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Recording Audio"/>
+                                        <connections>
+                                            <segue destination="Gel-OZ-Ph5" kind="show" id="s5O-3P-uma"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wD0-hu-JxL">
+                                        <rect key="frame" x="93" y="90" width="149" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Map With Location"/>
+                                        <connections>
+                                            <segue destination="v2B-2d-phl" kind="show" id="jle-e1-no2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzK-xa-H5U">
+                                        <rect key="frame" x="103.5" y="135" width="128" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Current Location"/>
+                                        <connections>
+                                            <segue destination="dAZ-h7-Z40" kind="show" id="e9G-gp-5wJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOt-jK-B4U">
+                                        <rect key="frame" x="116.5" y="180" width="102" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Import Viedo"/>
+                                        <connections>
+                                            <segue destination="w6k-6K-QQS" kind="show" id="TMV-Rd-oRK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pxl-PZ-gkZ" secondAttribute="trailing" constant="20" id="50S-Jh-gRp"/>
+                            <constraint firstItem="pxl-PZ-gkZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7n1-23-EOf"/>
+                            <constraint firstItem="pxl-PZ-gkZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d4o-t7-KC7"/>
+                            <constraint firstItem="pxl-PZ-gkZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hMO-wj-32m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SHp-Rg-hUG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="149"/>
+        </scene>
+        <!--Import Video-->
+        <scene sceneID="VmH-i4-K1j">
+            <objects>
+                <viewController id="w6k-6K-QQS" customClass="ImportViedo" customModule="Full_Application_Tasker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y4r-Ax-5bm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HSq-pn-Zq8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Import Video" id="6le-o3-Ijz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hm8-T0-0J9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="893"/>
+        </scene>
+        <!--Current Location-->
+        <scene sceneID="rfi-ql-wTt">
+            <objects>
+                <viewController id="dAZ-h7-Z40" customClass="CurrentLocation" customModule="Full_Application_Tasker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aWc-57-O6W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Pen-ol-RFl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Current Location" id="08V-r2-oyS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5V5-qs-g0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="1163"/>
+        </scene>
+        <!--Map With Location-->
+        <scene sceneID="2sO-ra-Pah">
+            <objects>
+                <viewController id="v2B-2d-phl" customClass="MapWithLocation" customModule="Full_Application_Tasker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NiA-Lh-yQT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ah1-dC-H9a" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tb2-Zp-dPz" firstAttribute="bottom" secondItem="ah1-dC-H9a" secondAttribute="bottom" id="8IO-pu-A7w"/>
+                            <constraint firstItem="Tb2-Zp-dPz" firstAttribute="trailing" secondItem="ah1-dC-H9a" secondAttribute="trailing" id="BJa-nO-PXd"/>
+                            <constraint firstItem="ah1-dC-H9a" firstAttribute="top" secondItem="Tb2-Zp-dPz" secondAttribute="top" id="DM0-5n-e6P"/>
+                            <constraint firstItem="ah1-dC-H9a" firstAttribute="leading" secondItem="Tb2-Zp-dPz" secondAttribute="leading" id="jf7-Rp-7yp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tb2-Zp-dPz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map With Location" id="sE4-hU-o2U">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Nmr-z2-2AG">
+                            <connections>
+                                <action selector="saveLocation:" destination="v2B-2d-phl" id="9pe-2Z-WjS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnItemSave" destination="Nmr-z2-2AG" id="GCi-L4-v6c"/>
+                        <outlet property="googleMapsView" destination="ah1-dC-H9a" id="4V3-FH-uup"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UiX-Z1-Ais" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="1029"/>
+        </scene>
+        <!--Recording Audio-->
+        <scene sceneID="yS4-zX-Spq">
+            <objects>
+                <viewController id="Gel-OZ-Ph5" customClass="RecordingAudio" customModule="Full_Application_Tasker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EPc-lL-0gf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cST-k7-M8d">
+                                <rect key="frame" x="160" y="288.5" width="55" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C00-An-f6k">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Record"/>
+                                        <connections>
+                                            <action selector="onRecord:" destination="Gel-OZ-Ph5" eventType="touchUpInside" id="YuO-8G-csa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wns-t9-fXd">
+                                        <rect key="frame" x="0.0" y="55" width="55" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Play"/>
+                                        <connections>
+                                            <action selector="onPlay:" destination="Gel-OZ-Ph5" eventType="touchUpInside" id="lX8-uK-jdH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cST-k7-M8d" firstAttribute="centerX" secondItem="EPc-lL-0gf" secondAttribute="centerX" id="dFk-iU-bMd"/>
+                            <constraint firstItem="cST-k7-M8d" firstAttribute="centerY" secondItem="EPc-lL-0gf" secondAttribute="centerY" id="j4t-qG-HEA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GuO-sh-xB4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recording Audio" id="i49-cK-UuY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQa-ze-EYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="597"/>
+        </scene>
+        <!--Import Image-->
+        <scene sceneID="36g-De-aFk">
+            <objects>
+                <viewController id="mLh-Bw-sN7" customClass="ImportImage" customModule="Full_Application_Tasker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h0j-f9-pvb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bqo-W8-zIj">
+                                <rect key="frame" x="75.5" y="100" width="225" height="200.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zvJ-OE-UDt">
+                                <rect key="frame" x="5" y="350.5" width="365" height="125"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Path" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRb-R9-bw7">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="5"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWs-Q7-J1Q">
+                                        <rect key="frame" x="0.0" y="45" width="365" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Gallery"/>
+                                        <connections>
+                                            <action selector="onGalleryClick:" destination="mLh-Bw-sN7" eventType="touchUpInside" id="sNd-cz-uhz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY7-gK-UDM">
+                                        <rect key="frame" x="0.0" y="90" width="365" height="35"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Camera"/>
+                                        <connections>
+                                            <action selector="onCameraClick:" destination="mLh-Bw-sN7" eventType="touchUpInside" id="v1h-8R-MDd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bqo-W8-zIj" firstAttribute="centerX" secondItem="h0j-f9-pvb" secondAttribute="centerX" id="1sV-tc-GwY"/>
+                            <constraint firstItem="Bqo-W8-zIj" firstAttribute="centerY" secondItem="h0j-f9-pvb" secondAttribute="centerY" multiplier="0.6" id="7pH-z7-O5z"/>
+                            <constraint firstItem="zvJ-OE-UDt" firstAttribute="top" secondItem="Bqo-W8-zIj" secondAttribute="bottom" constant="50" id="Byo-Qt-NBw"/>
+                            <constraint firstItem="Wgx-e5-fRF" firstAttribute="trailing" secondItem="zvJ-OE-UDt" secondAttribute="trailing" constant="5" id="KKa-r3-HEG"/>
+                            <constraint firstItem="Bqo-W8-zIj" firstAttribute="height" secondItem="h0j-f9-pvb" secondAttribute="height" multiplier="0.3" id="RHv-s3-Uvq"/>
+                            <constraint firstItem="Bqo-W8-zIj" firstAttribute="width" secondItem="h0j-f9-pvb" secondAttribute="width" multiplier="0.6" id="ZFe-xV-WZK"/>
+                            <constraint firstItem="zvJ-OE-UDt" firstAttribute="leading" secondItem="Wgx-e5-fRF" secondAttribute="leading" constant="5" id="qIs-f0-829"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wgx-e5-fRF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Import Image" id="yu7-Pc-sUH"/>
+                    <connections>
+                        <outlet property="imageView" destination="Bqo-W8-zIj" id="8bb-83-t7Q"/>
+                        <outlet property="lblPath" destination="zRb-R9-bw7" id="5x3-Ze-nDU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6IF-IG-MEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="-110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mbc-5M-xPx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mGc-00-NYs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f5L-bx-Tfz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vNo-28-G4z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BoV-R0-YtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.6" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+</document>
